@@ -1,4 +1,4 @@
-function add(n1: number, n2: number) {
+function add_functions(n1: number, n2: number) {
     return n1 + n2;
 }
 
@@ -11,11 +11,11 @@ function addAndHandle(n1: number, n2: number, cb: (num: number) => void) {
     cb(result);
 }
 
-printResult(add(5, 3));
+printResult(add_functions(5, 3));
 
 let combinedValues: (a: number, b: number) => number; // Function
 
-combinedValues = add;
+combinedValues = add_functions;
 
 console.info(combinedValues(6, 7));
 
